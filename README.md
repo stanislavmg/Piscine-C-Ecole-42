@@ -1,2 +1,2 @@
 # Piscine-C-Ecole-42
-Projects in 
+Projects in Piscine C
