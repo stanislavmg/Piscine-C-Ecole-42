@@ -1,35 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgoremyk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/22 13:20:08 by sgoremyk          #+#    #+#             */
-/*   Updated: 2023/11/23 18:31:34 by sgoremyk         ###   ########.fr       */
+/*   Created: 2023/11/23 10:41:25 by sgoremyk          #+#    #+#             */
+/*   Updated: 2023/11/23 19:59:23 by sgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+#include <stdio.h>
+#include <string.h>
+char	*ft_strstr(char *str, char *to_find)
 {
 	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] && s2[i])
+	if (*to_find == '\0')
+		return (str);
+	while (str[i])
+	{
+		j = 0;
+		while (str[i] == to_find[j])
+		{
+			if (!to_find[j + 1])
+				return (str + i - j);
+			j++;
+			i++;
+		}
 		i++;
-	if (s1[i] > s2[i])
-		return (s1[i]);
-	if (s1[i] < s2[i])
-		return (-s2[i]);
-	return (0);
+	}
+	return (NULL);
 }
 
-/*int	main(void)
+int	main(void)
 {
-	char	str1[] = "1";
-	char	str2[] = "12";
-
-	printf("%d\n",strcmp(str1,str2));
-	printf("%d\n",ft_strcmp(str1,str2));
+	char	s1[] = "12";
+	char	s2[] = "";
+	char	*ps;
+	ps = ft_strstr(s1,s2);
+	printf("%s\n", ps);
 	return (0);
-}*/
+}

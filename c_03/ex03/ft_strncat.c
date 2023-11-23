@@ -1,35 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgoremyk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/22 13:20:08 by sgoremyk          #+#    #+#             */
-/*   Updated: 2023/11/23 18:31:34 by sgoremyk         ###   ########.fr       */
+/*   Created: 2023/11/22 20:19:26 by sgoremyk          #+#    #+#             */
+/*   Updated: 2023/11/23 15:30:21 by sgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] && s2[i])
+	while (dest[i])
 		i++;
-	if (s1[i] > s2[i])
-		return (s1[i]);
-	if (s1[i] < s2[i])
-		return (-s2[i]);
-	return (0);
+	j = 0;
+	if (dest)
+	{
+		while (src[j] && j < nb)
+		{
+			dest[i] = src[j];
+			i++;
+			j++;
+		}	
+	}
+	dest[i] = '\0';
+	return (dest);
 }
-
 /*int	main(void)
 {
-	char	str1[] = "1";
-	char	str2[] = "12";
-
-	printf("%d\n",strcmp(str1,str2));
-	printf("%d\n",ft_strcmp(str1,str2));
+	char	s1[] = "0000";
+	char	s2[] = "";
+	unsigned i = 2;
+	
+	//printf("%p\n",strncat(s2, s1, i));
+	printf("%p\n", ft_strncat(s2, s1, i));
+	puts(s2);
 	return (0);
 }*/
