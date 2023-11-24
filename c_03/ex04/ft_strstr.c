@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
 char	*ft_strstr(char *str, char *to_find)
 {
 	unsigned int	i;
@@ -23,24 +23,22 @@ char	*ft_strstr(char *str, char *to_find)
 	while (str[i])
 	{
 		j = 0;
-		while (str[i] == to_find[j])
+		while (str[i+j] == to_find[j])
 		{
-			if (!to_find[j + 1])
-				return (str + i - j);
+			if (to_find[j + 1] == '\0')
+				return (str + i);
 			j++;
-			i++;
 		}
 		i++;
 	}
-	return (NULL);
-}
-
-int	main(void)
-{
-	char	s1[] = "12";
-	char	s2[] = "";
-	char	*ps;
-	ps = ft_strstr(s1,s2);
-	printf("%s\n", ps);
 	return (0);
 }
+
+/*int	main(void)
+{
+	char	s1[] = {'1','2','\0', '4'};
+	char	s2[] = "24";
+	
+	printf("%p\n", ft_strstr(s1,s2));
+	return (0);
+}*/
