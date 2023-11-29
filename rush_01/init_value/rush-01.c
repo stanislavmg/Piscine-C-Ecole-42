@@ -1,13 +1,3 @@
-#include "unistd.h"
-#include "stdio.h"
-#include "stdlib.h"
-
-char	**ft_calloc(void);
-int		ft_strlen(char *str);
-int		validation(int argc, char **argv);
-void	init(char **map, char **argv);
-int	g_size;
-
 int	main(int argc, char *argv[])
 {
 	int		i;
