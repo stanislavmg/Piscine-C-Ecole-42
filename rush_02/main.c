@@ -1,134 +1,65 @@
-#include <unistd.h>
-#include <fcntl.h>
-#include <stdlib.h>
-#include <stdio.h>
-#define BUF_SIZE 1024
-int	g_word_count = 0;
-int	ft_strlen(char *str);
-int	ft_open(char *path);
-int	ft_close(int fd);
-int	count_lines(char *buf);
-char	*get_word(char* buf);
-void	count_word(char **dictionary, char *buf);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sgoremyk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/03 22:16:59 by sgoremyk          #+#    #+#             */
+/*   Updated: 2023/12/03 23:34:42 by sgoremyk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "rush.h"
 
 int	main(int argc, char *argv[])
 {
-	(void)argc;
-	(void)argv;
-	int	count;
 	char	*path;
-	char	**dictionary;
-	char	buf[BUF_SIZE];
-	int	i;
-	int	fd;
-	
-	count = 0;
+	char	***dictionary;
+
+	if (valid_args(argc, argv[1]))
+		return (1);
 	path = "./numbers.dict";
-	fd = ft_open(path);
-	while (read(fd, buf, BUF_SIZE) != 0)
-		count += count_lines(buf);
-	printf("%d\n",count);
-	dictionary = (char**)malloc(sizeof(char*) * count);
-	i = 0;
-	printf("%p\n",dictionary);
-	i = -1;
-	while (++i < count)
-		printf("%p\n",dictionary[i]);
-	ft_close(fd);
+	dictionary = create_dict(path);
+	solve(argv[1], dictionary);
+	ft_free(dictionary);
 	return (0);
 }
 
-int	count_lines(char *buf)
+int	valid_args(int argc, char *argv)
 {
 	int	i;
-	int	count;
 
-	count = 0;
-	i = 0;
-	while (i < BUF_SIZE)
+	if (argc != 2 || argc != 3)
 	{
-		if (buf[i] == '\n')
-			count++;
-		i++;
+		write(1, "Incorrect argument\n", 19);
+		return (1);
 	}
-	return (count);
-}
-
-char	*get_word(char* buf)
-{
-	char	*str;
-	int	i;
-
-	str = (char*)malloc(g_word_count + 1);
 	i = 0;
-	while (i < g_word_count)
+	while (argv[i])
 	{
-		str[i] = buf[i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
-}
-
-void	count_word(char ***dictionary, char *buf)
-{
-	int	i;
-	int	j;
-
-	i = 0;
-	while(read(fd, buf, BUF_SIZE) != 0)
-	{
-		while (i < BUF_SIZE)
+		if (!(argv[i] >= '0' && argv[i] <= '9'))
 		{
-			while (buf[i] != ':' && i < BUF_SIZE)
-				i++;
-			while(buf[i] >= 32 && buf[i] < 127 && i < BUF_SIZE)
-			{
-				j = i;
-				g_word_count++;
-				i++;
-			}
-			if (buf[i] == '\n')
-			{
-				*dictionary = get_word(buf + j);
-				g_word_count = 0;
-				dictionary += 1;
-			}
+			write(1, "Incorrect argument\n", 19);
+			return (1);
 		}
-		else
-			i++;
-	}
-}
-
-int	ft_close(int fd)
-{
-	if(close(fd))
-	{
-		write(2, "Close error\n", 12);
-		return(-1);
+		i++;
 	}
 	return (0);
 }
 
-int	ft_open(char *path)
-{
-	int	fd;
-
-	fd = open(path, O_RDONLY);
-	if (fd == -1)
-	{
-		write(2, "Open error\n", BUF_SIZE);
-		return(-1);
-	}
-	return (fd);
-}
-
-int	ft_strlen(char *str)
+void	ft_free(char ***dictionary)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (i < g_count)
+	{
+		free(dictionary[0][i]);
+		free(dictionary[1][i]);
 		i++;
-	return (i);
+	}
+	free(dictionary[0]);
+	free(dictionary[1]);
+	free(dictionary);
 }
