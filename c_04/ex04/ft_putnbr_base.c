@@ -61,13 +61,3 @@ void	ft_putnbr_base(int nbr, char *base)
 	}
 	write(1, buf + i + 1, 63 - i);
 }
-
-/*int	main(void)
-{
-	int	a;
-	char	*base = "0123456789ABCDEF";
-
-	a = -1234567892;
-	ft_putnbr_base(a, base);
-	return (0);
-}*/

@@ -22,13 +22,3 @@ char	*ft_strupcase(char *str)
 	}
 	return (str);
 }
-
-/*int	main(void)
-{
-	char	str1[] = "        sadf  sdfasdf  adsz zzzZZ";
-	char	str2[] = "asdfg1234QWERI";
-
-	puts(ft_strupcase(str2));
-	puts(ft_strupcase(str1));
-	return (0);
-}*/

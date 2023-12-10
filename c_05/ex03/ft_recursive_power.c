@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 int	ft_recursive_power(int nb, int power)
 {
 	if (power < 0)
@@ -23,9 +21,3 @@ int	ft_recursive_power(int nb, int power)
 	nb *= ft_recursive_power(nb, power - 1);
 	return (nb);
 }
-
-/*int	main(void)
-{
-	printf("%d\n", ft_recursive_power(6,0));
-	return (0);
-}*/

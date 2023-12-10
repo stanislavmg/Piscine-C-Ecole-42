@@ -31,14 +31,3 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	dest[i] = '\0';
 	return (dest);
 }
-/*int	main(void)
-{
-	char	s1[] = "0000";
-	char	s2[] = "";
-	unsigned i = 2;
-	
-	//printf("%p\n",strncat(s2, s1, i));
-	printf("%p\n", ft_strncat(s2, s1, i));
-	puts(s2);
-	return (0);
-}*/

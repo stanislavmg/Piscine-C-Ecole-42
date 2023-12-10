@@ -24,13 +24,3 @@ int	ft_str_is_numeric(char *str)
 	}
 	return (1);
 }
-
-/*int	main(void)
-{
-	char	*str1 = "12a';";
-	char	*str2 = "";
-
-	printf("%d\n",ft_str_is_numeric(str1));
-	printf("%d\n",ft_str_is_numeric(str2));
-	return(0);
-}*/

@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 int	base_check(char *str)
 {
 	int	i;
@@ -91,11 +89,3 @@ int	ft_atoi_base(char *str, char *base)
 		res *= -1;
 	return (res);
 }
-
-/*int	main(void)
-{
-	char	*base = "0123456789ABCDEF";
-	char	*num = " ---12D687"; 
-	printf("%d\n",ft_atoi_base(num, base));
-	return (0);
-}*/

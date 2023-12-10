@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 int	ft_fibonacci(int index)
 {
 	int	res;
@@ -26,10 +24,3 @@ int	ft_fibonacci(int index)
 	res = ft_fibonacci(index - 1) + ft_fibonacci(index - 2);
 	return (res);
 }
-
-/*int	main (void)
-{
-	printf("%d\n",ft_fibonacci(10));
-
-	return (0);
-}*/

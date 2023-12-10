@@ -23,15 +23,3 @@ void	ft_rev_int_tab(int *tab, int size)
 		tab[size] = t;
 	}
 }
-
-/*int	main(void)
-{
-	int i;
-	int	ar[SIZE] = {1,2,3,4,5,6,7,8,9};
-
-	i = -1;
-	ft_rev_int_tab(ar, SIZE);
-	while (++i < SIZE)
-	   printf("%d ",ar[i]);
-	return (0);
-}*/

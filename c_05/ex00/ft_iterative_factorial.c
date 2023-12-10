@@ -26,12 +26,3 @@ int	ft_iterative_factorial(int nb)
 	}
 	return (res);
 }
-
-/*int	main(void)
-{
-	int	num;
-
-	num = 0;
-	printf("%d\n",ft_iterative_factorial(num));
-	return(0);
-}*/

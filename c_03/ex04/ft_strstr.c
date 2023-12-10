@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 char	*ft_strstr(char *str, char *to_find)
 {
 	unsigned int	i;
@@ -33,12 +31,3 @@ char	*ft_strstr(char *str, char *to_find)
 	}
 	return (0);
 }
-
-/*int	main(void)
-{
-	char	s1[] = {'1','2','\0', '4'};
-	char	s2[] = "24";
-	
-	printf("%p\n", ft_strstr(s1,s2));
-	return (0);
-}*/

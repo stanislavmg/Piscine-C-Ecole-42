@@ -31,16 +31,3 @@ char	*ft_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-
-/*int	main(void)
-{
-	char	s1[] = "0000";
-	char	s2[] = "aaaa\0aaaaaa";
-	
-	puts(s2);
-	kprintf("%p\n", strcat(s2, s1));
-	puts(s2);
-	printf("%p\n", ft_strcat(s2, s1));
-	puts(s2);
-	return (0);
-}*/

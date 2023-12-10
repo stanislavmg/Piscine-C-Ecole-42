@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 int	ft_atoi(char *str)
 {
 	int	sign;
@@ -40,10 +38,3 @@ int	ft_atoi(char *str)
 		res *= -1;
 	return (res);
 }
-/*int	main(void)
-{
-	char *str = "--+-+00000001";
-
-	printf("%d\n",ft_atoi(str));
-	return (0);
-}*/

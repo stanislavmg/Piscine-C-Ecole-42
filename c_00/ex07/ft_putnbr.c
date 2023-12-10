@@ -12,15 +12,6 @@
 
 #include <unistd.h>
 
-void	ft_putnbr(int n);
-void	int_check(int *pn);
-
-/*int		main(void)
-{
-	ft_putnbr(2147483647);
-	return 0;
-}*/
-
 void	int_check(int *pn)
 {
 	int		i;

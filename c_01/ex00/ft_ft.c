@@ -14,14 +14,3 @@ void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
-
-/*int	main(void)
-{
-	int	a;
-	int	*pa;
-
-	a = 10;
-	pa = &a;
-	ft_ft(pa);
-	printf("%d\n",*pa);
-}*/

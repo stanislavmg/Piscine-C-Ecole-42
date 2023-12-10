@@ -23,13 +23,3 @@ int	ft_strcmp(char *s1, char *s2)
 		return (-s2[i]);
 	return (0);
 }
-
-/*int	main(void)
-{
-	char	str1[] = "1";
-	char	str2[] = "12";
-
-	printf("%d\n",strcmp(str1,str2));
-	printf("%d\n",ft_strcmp(str1,str2));
-	return (0);
-}*/

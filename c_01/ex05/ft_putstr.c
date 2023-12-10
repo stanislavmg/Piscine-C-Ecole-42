@@ -20,13 +20,3 @@ void	ft_putstr(char *str)
 	while (++i, *(str + i) != '\0')
 		write(1, str + i, 1);
 }
-
-/*int	main(void)
-{
-	char	*str = "Ecole 42\n";
-	char	str2[12] = {'1', '2', '3', '4', '\n'};
-
-	ft_putstr(str);
-	ft_putstr(str2);
-	return (0);
-}*/

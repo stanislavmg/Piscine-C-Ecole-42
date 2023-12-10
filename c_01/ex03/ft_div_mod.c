@@ -18,25 +18,3 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	*mod = a % b;
 	}
 }
-
-/*int	main(void)
-{
-	int	a;
-	int	b;
-	int div;
-	int	mod;
-	int	*pa;
-	int	*pb;
-	int	*pdiv;
-	int	*pmod;
-
-	a = 0;
-	b = 2;
-	pa = &a;
-	pb = &b;
-	pdiv = &div;
-	pmod = &mod;
-	ft_div_mod(a, b, pdiv, pmod);
-	printf("div=%d mod=%d\n",div ,mod);
-	return (0);
-}*/

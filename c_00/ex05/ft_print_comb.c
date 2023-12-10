@@ -12,15 +12,6 @@
 
 #include <unistd.h>
 
-void	ft_print_comb(void);
-void	ft_putchar(char a, char b, char c);
-
-int main (void)
-{
-	ft_print_comb();
-	return 0;
-}
-
 void	ft_putchar(char a, char b, char c)
 {
 	if (a == '7' && b == '8' && c == '9')

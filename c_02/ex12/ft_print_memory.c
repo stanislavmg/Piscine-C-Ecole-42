@@ -107,10 +107,3 @@ void	*ft_print_memory(void *addr, unsigned int size)
 	}
 	return (addr);
 }
-
-int	main(void)
-{
-	char n[] = "asdfkaljsdhg;laksjdg;lkjasd;flkjas;dljhgksdjhf;lgkajsd;lfkjas;ldkjf;lasdkjf;kjashglkhsdf";
-	ft_print_memory(n,1000);
-	return (0);
-}

@@ -1,56 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strs_to_tab.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgoremyk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/06 16:04:24 by sgoremyk          #+#    #+#             */
-/*   Updated: 2023/12/06 16:12:19 by sgoremyk         ###   ########.fr       */
+/*   Created: 2023/12/03 22:16:59 by sgoremyk          #+#    #+#             */
+/*   Updated: 2023/12/03 23:34:42 by sgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdlib.h>
+#include "rush.h"
 
-struct	s_stock_str	*ft_strs_to_tab(int ac, char **av)
+int	main(int argc, char *argv[])
 {
-	int	i;
-	char	*str;
-	
-	i = 0;
-	while (i < ac)
-	{
-		str = (char *)malloc(ft_strlen(av[i]) + 1);
-	
-	}
+	char	*path;
+	char	***dictionary;
 
-}
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
-
-	i = -1;
-	while (++i, src[i])
-		dest[i] = src[i];
-	dest[i] = '\0';
-	return (dest);
-}
-
-int	main(void)
-{
-	
-
-
+	(void)argc;
+	path = "./numbers.dict";
+	dictionary = create_dict(path);
+	solve(argv[1], dictionary);
+	ft_free(dictionary);
 	return (0);
-}*/
+}
+
+void	ft_free(char ***dictionary)
+{
+	int	i;
+
+	i = 0;
+	while (i < g_count)
+	{
+		free(dictionary[0][i]);
+		free(dictionary[1][i]);
+		i++;
+	}
+	free(dictionary[0]);
+	free(dictionary[1]);
+	free(dictionary);
+}

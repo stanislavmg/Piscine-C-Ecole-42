@@ -21,19 +21,3 @@ void	ft_ultimate_div_mod(int *a, int *b)
 		*b = temp % *b;
 	}
 }
-
-/*int	main(void)
-{
-	int	a;
-	int	b;
-	int	*pa;
-	int	*pb;
-
-	a = 122;
-	b = 10;
-	pa = &a;
-	pb = &b;
-	ft_ultimate_div_mod(pa, pb);
-	printf("a=%d b=%d\n", a, b);
-	return (0);
-}*/

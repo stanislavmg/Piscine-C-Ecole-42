@@ -32,9 +32,3 @@ int	ft_find_next_prime(int nb)
 		nb++;
 	return (nb);
 }
-
-/*int	main(void)
-{
-	printf("%d\n",ft_find_next_prime(1));
-	return (0);
-}*/

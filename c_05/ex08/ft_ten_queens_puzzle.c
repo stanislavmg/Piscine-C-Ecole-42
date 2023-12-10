@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 #define SIZE 10
 #include <unistd.h>
-#include <stdio.h>
 
 void	print_solve(char (*table)[SIZE]);
 void	solve(char (*table)[SIZE], int *count, int x);
@@ -135,9 +134,3 @@ int	check_1(char (*table)[SIZE], int x, int y)
 	}
 	return (1);
 }
-
-/*int	main(void)
-{
-	printf("%d\n", ft_ten_queens_puzzle());
-	return (0);
-}*/

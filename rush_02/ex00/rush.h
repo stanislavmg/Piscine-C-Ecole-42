@@ -13,14 +13,11 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <stdio.h>
 #define BUF_SIZE 1024
-#define STANDART_DICTIONARY "./numbers.dict"
 
 int		g_count;
 int		ft_strlen(char *str);
 int		ft_open(char *path);
-int		valid_args(int argc, char *argv);
 int		ft_close(int fd);
 void	ft_puts(char *str);
 void	ft_free(char ***dictionary);

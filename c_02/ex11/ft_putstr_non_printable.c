@@ -36,11 +36,3 @@ void	ft_putstr_non_printable(char *str)
 		i++;
 	}
 }
-
-/*int	main(void)
-{
-	char	str[] = {'z','f', 5, 127, 's', 11, 'a', 'v', 12, ' ', '\0'};
-
-	ft_putstr_non_printable(str);
-	return (0);
-}*/

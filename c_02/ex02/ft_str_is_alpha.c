@@ -25,13 +25,3 @@ int	ft_str_is_alpha(char *str)
 	}
 	return (1);
 }
-
-/*int	main(void)
-{
-	char	*str1 = "aaAasRjlkZ";
-	char	*str2 = "asdf;laskdgj1";
-
-	printf("%d\n",ft_str_is_alpha(str1));
-	printf("%d\n",ft_str_is_alpha(str2));
-	return (0);
-}*/

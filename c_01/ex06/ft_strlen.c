@@ -19,10 +19,3 @@ int	ft_strlen(char *str)
 		i++;
 	return (i);
 }
-
-/*int main(void)
-{
-	char	*str = "123456789";
-	printf("%d\n", ft_strlen(str));
-	return (0);
-}*/

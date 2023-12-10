@@ -21,14 +21,3 @@ int	ft_strlen(char *str)
 		i++;
 	return (i);
 }
-
-/*int	main(void)
-{
-	char	s1[] = "123456789";
-	char	*p;
-
-	p = 0;
-	printf("%d\n",ft_strlen(s1));
-	printf("%d\n",ft_strlen(p));
-	return (0);
-}*/

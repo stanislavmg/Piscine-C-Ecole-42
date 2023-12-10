@@ -24,16 +24,3 @@ int	ft_str_is_printable(char *str)
 	}
 	return (1);
 }
-
-/*int	main(void)
-{
-	char	*str1 = "";
-	char	ch;
-	char	*str2;
-	
-	ch = 0;
-	str2 = &ch;
-	printf("%d\n",ft_str_is_printable(str1));
-	printf("%d\n",ft_str_is_printable(str2));
-	return (0);
-}*/

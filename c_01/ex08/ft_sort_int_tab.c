@@ -32,15 +32,3 @@ void	ft_sort_int_tab(int *tab, int size)
 		}
 	}
 }
-
-/*int	main(void)
-{
-	int	i;
-	int ar[SIZE] = {9,2,1,4,0,3,7,5,8,6};
-	
-	i = -1;
-	ft_sort_int_tab(ar, SIZE);
-	while (++i < SIZE)
-		printf("%d ",ar[i]);
-	return (0);
-}*/

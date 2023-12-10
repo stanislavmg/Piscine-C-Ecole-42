@@ -47,13 +47,3 @@ char	*ft_strcapitalize(char *str)
 	}
 	return (str);
 }
-
-/*int	main(void)
-{
-	char	str1[] = "__'';12'3'kjjsadf  sdf- 12k-a#sdf  adsz zzzZZ";
-	char	str2[] = "as_ _d\nfg1234QWERI";
-
-	puts(ft_strcapitalize(str2));
-	puts(ft_strcapitalize(str1));
-	return (0);
-}*/

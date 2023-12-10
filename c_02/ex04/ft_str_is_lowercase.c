@@ -24,13 +24,3 @@ int	ft_str_is_lowercase(char *str)
 	}
 	return (1);
 }
-
-/*int	main(void)
-{
-	char	*str1 = "asdafasdA";
-	char	*str2 = "asdfg1234";
-
-	printf("%d\n",ft_str_is_lowercase(str1));
-	printf("%d\n",ft_str_is_lowercase(str2));
-	return (0);
-}*/

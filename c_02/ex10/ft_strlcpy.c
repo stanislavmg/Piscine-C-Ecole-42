@@ -30,16 +30,3 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	}
 	return (count);
 }
-
-/*int	main(void)
-{
-	char	str1[] = "12345678";
-	char	str2[] = "00000000000000";
-
-	printf("%d\n",ft_strlcpy(str2, str1, -2));
-	printf("%d\n",strlcpy(str2, str1, -2));
-	puts(str1);
-	puts(str2);
-
-	return (0);
-}*/

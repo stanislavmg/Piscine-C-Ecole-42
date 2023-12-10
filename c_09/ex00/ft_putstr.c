@@ -24,11 +24,3 @@ void	ft_putstr(char *str)
 		write(1, str, i);
 	}
 }
-
-/*int	main(void)
-{
-	char	s1[] = "123456789asdfgh\n";
-
-	ft_putstr(s1);
-	return (0);
-}*/

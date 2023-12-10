@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-//#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -40,11 +39,3 @@ char	*ft_strdup(char *src)
 	dst[i] = '\0';
 	return (dst);
 }
-
-/*int	main(void)
-{
-	char	str[] = "12345";
-
-	printf("%s\n", ft_strdup(str));
-	return (0);
-}*/

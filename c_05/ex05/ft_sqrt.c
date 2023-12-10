@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 int	ft_sqrt(int nb)
 {
 	int	res;
@@ -27,10 +25,3 @@ int	ft_sqrt(int nb)
 	}
 	return (0);
 }
-
-/*int	main(void)
-{
-	printf("%d\n", ft_sqrt(2147395600));
-
-	return (0);
-}*/

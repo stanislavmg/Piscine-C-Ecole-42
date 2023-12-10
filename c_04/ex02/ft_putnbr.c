@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-//#include <stdio.h>
 
 void	ft_putnbr(int nb)
 {
@@ -38,13 +37,3 @@ void	ft_putnbr(int nb)
 	}
 	write(1, buf + j + 1, 9 - j);
 }
-
-/*int	main(void)
-{
-	int	i;
-
-	i = 0;
-	printf("%d\n", i);
-	ft_putnbr(i);
-	return (0);
-}*/

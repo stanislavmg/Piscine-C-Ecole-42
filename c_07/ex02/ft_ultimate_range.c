@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-//#include <stdio.h>
 
 int	ft_ultimate_range(int **range, int min, int max)
 {
@@ -33,19 +32,3 @@ int	ft_ultimate_range(int **range, int min, int max)
 	}
 	return (size);
 }
-
-/*int	main(void)
-{
-	int	*range = 0;
-	int	size;
-	int	i;
-	size = ft_ultimate_range(&range, 0, 10);
-	i = 0;
-	while (i < size)
-	{
-		printf("%d ", range[i]);
-		i++;
-	}
-	printf("\n");
-	return (0);
-}*/

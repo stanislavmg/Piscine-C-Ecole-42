@@ -24,13 +24,3 @@ int	ft_str_is_uppercase(char *str)
 	}
 	return (1);
 }
-
-/*int	main(void)
-{
-	char	*str1 = "ASDFGHJKL";
-	char	*str2 = "asdfg1234QWERI";
-
-	printf("%d\n",ft_str_is_uppercase(str1));
-	printf("%d\n",ft_str_is_uppercase(str2));
-	return (0);
-}*/

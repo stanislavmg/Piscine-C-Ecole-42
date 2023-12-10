@@ -20,14 +20,3 @@ char	*ft_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-
-/*int	main(void)
-{
-	char	str1[] = "123456789";
-	char	str2[] = "abcdefghisa;dlfkas";
-
-	ft_strcpy(str2, str1);
-	puts(str1);
-	puts(str2);
-	return (0);
-}*/

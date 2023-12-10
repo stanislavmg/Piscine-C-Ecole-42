@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 int	ft_recursive_factorial(int nb)
 {
 	int	res;
@@ -22,13 +21,3 @@ int	ft_recursive_factorial(int nb)
 	res = nb * ft_recursive_factorial(nb - 1);
 	return (res);
 }
-
-/*int	main(void)
-{
-	int	num;
-
-	num = 10;
-	printf("%d\n",ft_recursive_factorial(num));
-
-	return (0);
-}*/

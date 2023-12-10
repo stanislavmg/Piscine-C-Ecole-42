@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 int	ft_is_prime(int nb)
 {
 	int	i;
@@ -27,9 +25,3 @@ int	ft_is_prime(int nb)
 	}
 	return (1);
 }
-
-/*int	main(void)
-{
-	printf("%d\n", ft_is_prime(6));
-	return (0);
-}*/
