@@ -6,4 +6,4 @@ My level progress in 26 days
 ![](/img/level.png)
 ![](/img/level_history.png)
 My results
-![](/img/result.png)
+![](/img/results.png)
