@@ -6,9 +6,7 @@
 learning: no teachers, no lectures, fully hands on. 42 allows students to free their creativity through project learning.
 > 
 
-![Photos taken from [42yerevan.am](https://42yerevan.am/)](Piscine%20C%20Ecole%2042%2067c74c903f864983961130907dc07d5a/Untitled.jpeg)
-
-Photos taken from [42yerevan.am](https://42yerevan.am/)
+![Photos taken from [42yerevan.am](https://42yerevan.am/)](/img/42_network.jpg)
 
 Piscine C is a 26-day intensive program that will teach you basic IT knowledge, Git, and the foundations of programming in the C language.
 
