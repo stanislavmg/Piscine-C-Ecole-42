@@ -20,7 +20,7 @@ The program consists of:
 - 2 modules in shell;
 - 12 modules in C language;
 - 4 group projects;
-- 3 exams.
+- 4 exams.
 
 ![](/img/holy_graph.png)
 
